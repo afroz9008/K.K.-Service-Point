@@ -224,7 +224,7 @@ async function handleFormSubmission(e) {
       alert("❌ " + text);
     }
   } catch (err) {
-    alert("❌ Network error!");
+    alert(JSON.stringify(err)+" ❌ Network error!");
   }
 }
 
