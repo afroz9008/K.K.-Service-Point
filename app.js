@@ -207,20 +207,25 @@ async function handleFormSubmission(e) {
   e.preventDefault();
 
   const formData = new FormData(bookingForm);
-  const data = Object.fromEntries(formData.entries());
 
   try {
     const res = await fetch("https://script.google.com/macros/s/AKfycbxw0M-q0QJ6FHHbWsng1k-Bem0_M5oQPsCeky4lV38NDcxpl_dKBMCGukpDu35ReJJH/exec", {
       method: "POST",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" }
+      body: new URLSearchParams(formData), // ✅ Send as form-encoded
     });
-    alert("✅ Submitted successfully!");
-    bookingForm.reset();
+
+    const text = await res.text();
+    if (text.includes("Success")) {
+      alert("✅ Submitted successfully!");
+      bookingForm.reset();
+    } else {
+      alert("❌ " + text);
+    }
   } catch (err) {
-    alert(err.message+" ❌ Network error!");
+    alert("❌ Network error: " + err.message);
   }
 }
+
 
 // Parallax effect for hero section
 function handleParallax() {
