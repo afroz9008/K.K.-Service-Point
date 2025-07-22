@@ -202,31 +202,30 @@ function showFormMessage(message, type = 'success') {
     }, 5000);
 }
 
-function handleFormSubmission(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(bookingForm);
-    const errors = validateForm(formData);
-    
-    if (errors.length > 0) {
-        showFormMessage(errors.join(', '), 'error');
-        return;
+// Submit
+async function handleFormSubmission(e) {
+  e.preventDefault();
+
+  const formData = new FormData(bookingForm);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbxw0M-q0QJ6FHHbWsng1k-Bem0_M5oQPsCeky4lV38NDcxpl_dKBMCGukpDu35ReJJH/exec", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" }
+    });
+
+    const text = await res.text();
+    if (text.includes("Success")) {
+      alert("✅ Submitted successfully!");
+      bookingForm.reset();
+    } else {
+      alert("❌ " + text);
     }
-    
-    // Simulate form submission
-    const submitBtn = bookingForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Booking...';
-    
-    setTimeout(() => {
-        showFormMessage('Booking request submitted successfully! We will contact you shortly to confirm your appointment.');
-        bookingForm.reset();
-        
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-    }, 2000);
+  } catch (err) {
+    alert("❌ Network error!");
+  }
 }
 
 // Parallax effect for hero section
