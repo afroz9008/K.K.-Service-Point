@@ -4,489 +4,404 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K.K. Service Point - Professional Auto Care You Can Trust</title>
-    <meta name="description" content="Premier automotive service center offering comprehensive car repair and maintenance services. Expert technicians, modern equipment, honest pricing.">
+    <meta name="description" content="K.K. Service Point offers comprehensive automotive repair services. Expert technicians, modern equipment, and quality parts for all your car maintenance needs.">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="logo-icon">🔧</span>
-                <span class="logo-text">K.K. Service Point</span>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2>K.K. Service Point</h2>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="tel:+919998936790" class="btn btn--primary nav-cta">Call Now</a></li>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#booking" class="btn btn--primary btn--sm">Book Appointment</a>
+                </li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <div class="nav__phone">
+                <a href="tel:+919998936790" class="nav__phone-link">📞 +91 9998936790</a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-particles"></div>
-            <div class="hero-image">
-                <img src="https://pplx-res.cloudinary.com/image/upload/v1753204869/pplx_project_search_images/b85bee62a344b2b1e998824f4d48683af86492d7.jpg" alt="3D Engine Components" class="hero-3d-image">
-            </div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text animate-fade-up">
-                    <span class="hero-tagline">Professional Auto Care You Can Trust</span>
-                    <h1 class="hero-title">
-                        Expert <span class="text-gradient">Automotive</span><br>
-                        Service & Repair
-                    </h1>
-                    <p class="hero-description">
-                        Your premier destination for comprehensive automotive services. We combine years of experience with modern technology to keep your vehicle running at its best.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn--primary btn--lg">Book Service</a>
-                        <a href="tel:+919998936790" class="btn btn--outline btn--lg">
-                            <span class="btn-icon">📞</span>
-                            Call Now
-                        </a>
-                    </div>
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">Professional Auto Care You Can Trust</h1>
+                <p class="hero__subtitle">Complete automotive repair and maintenance services with modern equipment, experienced technicians, and guaranteed quality parts.</p>
+                <div class="hero__buttons">
+                    <a href="#booking" class="btn btn--primary btn--lg">Book Service</a>
+                    <a href="#contact" class="btn btn--outline btn--lg">Get Quote</a>
                 </div>
-                <div class="hero-stats animate-slide-left">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="15">0</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="5000">0</span>
-                        <span class="stat-label">Satisfied Customers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="12000">0</span>
-                        <span class="stat-label">Services Completed</span>
-                    </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__floating-elements">
+                    <div class="floating-element floating-element--1">⚙️</div>
+                    <div class="floating-element floating-element--2">🔧</div>
+                    <div class="floating-element floating-element--3">🛞</div>
+                    <div class="floating-element floating-element--4">🛢️</div>
+                </div>
+                <div class="hero__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1753204869/pplx_project_search_images/b85bee62a344b2b1e998824f4d48683af86492d7.jpg" alt="3D Engine Components" class="hero__img">
                 </div>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
+        <div class="hero__scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section class="services" id="services">
         <div class="container">
-            <div class="section-header animate-fade-up">
-                <span class="section-tagline">Our Expertise</span>
-                <h2 class="section-title">Comprehensive Automotive Services</h2>
-                <p class="section-description">
-                    From routine maintenance to complex repairs, our certified technicians handle all your automotive needs with precision and care.
-                </p>
+            <div class="section__header">
+                <h2 class="section__title">Our Comprehensive Services</h2>
+                <p class="section__subtitle">Professional automotive solutions for all your vehicle needs</p>
             </div>
-            
-            <div class="services-grid">
-                <div class="service-card animate-scale-up" data-category="mechanical">
-                    <div class="service-icon">🔧</div>
-                    <h3 class="service-title">Engine Repair & Maintenance</h3>
-                    <p class="service-description">Complete engine diagnostics, repair, and maintenance services using the latest diagnostic equipment.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Diagnostic</span>
-                        <span class="feature-tag">Repair</span>
-                        <span class="feature-tag">Maintenance</span>
-                    </div>
+            <div class="services__grid">
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-card__icon">⚙️</div>
+                    <h3 class="service-card__title">Engine Repair & Maintenance</h3>
+                    <p class="service-card__description">Complete engine diagnostics, repair, and maintenance services to keep your vehicle running smoothly.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="safety">
-                    <div class="service-icon">🛑</div>
-                    <h3 class="service-title">Brake System Service</h3>
-                    <p class="service-description">Professional brake inspection, pad replacement, and complete brake system maintenance for your safety.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Inspection</span>
-                        <span class="feature-tag">Replacement</span>
-                        <span class="feature-tag">Safety Check</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-card__icon">🛑</div>
+                    <h3 class="service-card__title">Brake System Service</h3>
+                    <p class="service-card__description">Professional brake inspection, pad replacement, and complete brake system maintenance.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="mechanical">
-                    <div class="service-icon">⚙️</div>
-                    <h3 class="service-title">Transmission Service</h3>
-                    <p class="service-description">Expert transmission diagnostics, repair, and maintenance for automatic and manual transmissions.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Automatic</span>
-                        <span class="feature-tag">Manual</span>
-                        <span class="feature-tag">Diagnostics</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-card__icon">🔧</div>
+                    <h3 class="service-card__title">Transmission Repair</h3>
+                    <p class="service-card__description">Expert transmission diagnostics, repair, and maintenance for all vehicle types.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="maintenance">
-                    <div class="service-icon">🛢️</div>
-                    <h3 class="service-title">Oil Change & Fluids</h3>
-                    <p class="service-description">Quick and professional oil changes with premium lubricants and complete fluid service.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Premium Oil</span>
-                        <span class="feature-tag">Quick Service</span>
-                        <span class="feature-tag">All Fluids</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="400">
+                    <div class="service-card__icon">🛢️</div>
+                    <h3 class="service-card__title">Oil Change & Fluid Services</h3>
+                    <p class="service-card__description">Regular oil changes and fluid top-ups to maintain optimal engine performance.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="maintenance">
-                    <div class="service-icon">🛞</div>
-                    <h3 class="service-title">Tire Services</h3>
-                    <p class="service-description">Complete tire services including installation, rotation, balancing, and wheel alignment.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Installation</span>
-                        <span class="feature-tag">Balancing</span>
-                        <span class="feature-tag">Alignment</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="500">
+                    <div class="service-card__icon">🛞</div>
+                    <h3 class="service-card__title">Tire Services & Alignment</h3>
+                    <p class="service-card__description">Tire installation, rotation, balancing, and wheel alignment services.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="electrical">
-                    <div class="service-icon">⚡</div>
-                    <h3 class="service-title">Electrical System</h3>
-                    <p class="service-description">Advanced electrical diagnostics and repair for all modern vehicle electronic systems.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Diagnostics</span>
-                        <span class="feature-tag">Modern Systems</span>
-                        <span class="feature-tag">Expert Repair</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="600">
+                    <div class="service-card__icon">⚡</div>
+                    <h3 class="service-card__title">Electrical System Repair</h3>
+                    <p class="service-card__description">Complete electrical diagnostics and repair for modern vehicle systems.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="comfort">
-                    <div class="service-icon">❄️</div>
-                    <h3 class="service-title">Climate Control</h3>
-                    <p class="service-description">AC and heating system repair and maintenance for optimal comfort in all seasons.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">AC Service</span>
-                        <span class="feature-tag">Heating</span>
-                        <span class="feature-tag">Year-round</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="700">
+                    <div class="service-card__icon">❄️</div>
+                    <h3 class="service-card__title">AC/Heating System</h3>
+                    <p class="service-card__description">Climate control system repair and maintenance for year-round comfort.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="diagnostic">
-                    <div class="service-icon">💻</div>
-                    <h3 class="service-title">Computer Diagnostics</h3>
-                    <p class="service-description">State-of-the-art computer diagnostics to quickly identify and resolve vehicle issues.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">Latest Tech</span>
-                        <span class="feature-tag">Fast Results</span>
-                        <span class="feature-tag">Accurate</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="800">
+                    <div class="service-card__icon">🔍</div>
+                    <h3 class="service-card__title">Diagnostic Services</h3>
+                    <p class="service-card__description">Advanced computer diagnostics to identify and resolve vehicle issues quickly.</p>
                 </div>
-
-                <div class="service-card animate-scale-up" data-category="emergency">
-                    <div class="service-icon">🚨</div>
-                    <h3 class="service-title">Emergency Service</h3>
-                    <p class="service-description">24/7 emergency roadside assistance including towing and mobile repair services.</p>
-                    <div class="service-features">
-                        <span class="feature-tag">24/7</span>
-                        <span class="feature-tag">Towing</span>
-                        <span class="feature-tag">Mobile</span>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="900">
+                    <div class="service-card__icon">🚨</div>
+                    <h3 class="service-card__title">Emergency Roadside Assistance</h3>
+                    <p class="service-card__description">24/7 emergency services including towing and on-site repairs.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="1000">
+                    <div class="service-card__icon">🎨</div>
+                    <h3 class="service-card__title">Body Work & Painting</h3>
+                    <p class="service-card__description">Professional collision repair, bodywork, and automotive painting services.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="1100">
+                    <div class="service-card__icon">📅</div>
+                    <h3 class="service-card__title">Routine Maintenance</h3>
+                    <p class="service-card__description">Scheduled maintenance services to prevent issues and extend vehicle life.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="1200">
+                    <div class="service-card__icon">🔋</div>
+                    <h3 class="service-card__title">Battery Services</h3>
+                    <p class="service-card__description">Battery testing, replacement, and charging system diagnostics.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text animate-slide-right">
-                    <span class="section-tagline">About K.K. Service Point</span>
-                    <h2 class="section-title">Excellence in Automotive Care Since 2008</h2>
-                    <p class="section-description">
-                        With over 15 years of dedicated service to the automotive community, K.K. Service Point has established itself as a trusted name in comprehensive vehicle care. Our commitment to excellence, combined with state-of-the-art equipment and ASE-certified technicians, ensures your vehicle receives the professional attention it deserves.
-                    </p>
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="section__title">Why Choose K.K. Service Point?</h2>
+                    <p class="about__description">With over 15 years of experience in automotive repair and maintenance, K.K. Service Point has built a reputation for excellence, reliability, and customer satisfaction. Our modern facility is equipped with state-of-the-art diagnostic equipment and our certified technicians are trained on the latest automotive technologies.</p>
                     
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">✅</div>
-                            <div class="feature-content">
-                                <h4>ASE Certified Technicians</h4>
-                                <p>Our team holds industry-leading certifications and continuous training.</p>
+                    <div class="about__features">
+                        <div class="feature">
+                            <div class="feature__icon">👨‍🔧</div>
+                            <div class="feature__content">
+                                <h4>Expert Technicians</h4>
+                                <p>Certified professionals with years of experience</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🛠️</div>
-                            <div class="feature-content">
+                        <div class="feature">
+                            <div class="feature__icon">🔬</div>
+                            <div class="feature__content">
                                 <h4>Modern Equipment</h4>
-                                <p>Latest diagnostic tools and repair equipment for accurate service.</p>
+                                <p>Latest diagnostic tools and repair equipment</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">💰</div>
-                            <div class="feature-content">
-                                <h4>Transparent Pricing</h4>
-                                <p>Honest, upfront pricing with detailed explanations of all work.</p>
+                        <div class="feature">
+                            <div class="feature__icon">✅</div>
+                            <div class="feature__content">
+                                <h4>Quality Parts</h4>
+                                <p>Genuine and high-quality replacement parts</p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="certifications">
-                        <h4>Our Certifications & Memberships</h4>
-                        <div class="cert-badges">
-                            <span class="cert-badge">ASE Certified</span>
-                            <span class="cert-badge">EPA Certified</span>
-                            <span class="cert-badge">AAA Approved</span>
-                            <span class="cert-badge">BBB A+ Rating</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="about-image animate-slide-left">
-                    <div class="image-wrapper">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1753204869/pplx_project_search_images/32b04b3c4f577dc8bf90e3f4e94d7207d8ddba7a.jpg" alt="Modern Auto Repair Shop" class="about-img">
-                        <div class="image-overlay">
-                            <div class="play-button">
-                                <span>▶️</span>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="about__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1753204869/pplx_project_search_images/32b04b3c4f577dc8bf90e3f4e94d7207d8ddba7a.jpg" alt="Modern car repair garage" class="about__img">
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat__number" data-target="15">0</div>
+                    <div class="stat__label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat__number" data-target="5000">0</div>
+                    <div class="stat__label">Satisfied Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat__number" data-target="12000">0</div>
+                    <div class="stat__label">Services Completed</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <div class="section-header animate-fade-up">
-                <span class="section-tagline">Customer Reviews</span>
-                <h2 class="section-title">What Our Customers Say</h2>
-                <p class="section-description">
-                    Don't just take our word for it. Here's what our satisfied customers have to say about our service.
-                </p>
+            <div class="section__header">
+                <h2 class="section__title">What Our Customers Say</h2>
+                <p class="section__subtitle">Real feedback from satisfied customers</p>
             </div>
-
-            <div class="testimonials-carousel" id="testimonials-carousel">
-                <div class="testimonial-card active">
-                    <div class="testimonial-header">
-                        <div class="customer-info">
-                            <div class="customer-avatar">R</div>
-                            <div class="customer-details">
-                                <h4 class="customer-name">Rajesh Kumar</h4>
-                                <span class="customer-location">Regular Customer</span>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
+            
+            <div class="testimonials__slider">
+                <div class="testimonial active" data-slide="0">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial__text">"Excellent service and very professional staff. My car runs like new after their maintenance work."</blockquote>
+                        <div class="testimonial__author">
+                            <strong>Rajesh Kumar</strong>
+                            <span>Local Customer</span>
                         </div>
                     </div>
-                    <p class="testimonial-text">
-                        "Outstanding service and honest pricing. The team at K.K. Service Point goes above and beyond to ensure my car runs perfectly."
-                    </p>
-                    <div class="service-tag">Engine Repair</div>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-info">
-                            <div class="customer-avatar">P</div>
-                            <div class="customer-details">
-                                <h4 class="customer-name">Priya Sharma</h4>
-                                <span class="customer-location">Local Business Owner</span>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
+                
+                <div class="testimonial" data-slide="1">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial__text">"Quick diagnosis and fair pricing. I trust them with all my vehicle repairs."</blockquote>
+                        <div class="testimonial__author">
+                            <strong>Priya Sharma</strong>
+                            <span>Regular Customer</span>
                         </div>
                     </div>
-                    <p class="testimonial-text">
-                        "Professional, reliable, and trustworthy. They service our entire fleet and we couldn't be happier with their expertise."
-                    </p>
-                    <div class="service-tag">Fleet Maintenance</div>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-info">
-                            <div class="customer-avatar">A</div>
-                            <div class="customer-details">
-                                <h4 class="customer-name">Amit Patel</h4>
-                                <span class="customer-location">Satisfied Customer</span>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
+                
+                <div class="testimonial" data-slide="2">
+                    <div class="testimonial__content">
+                        <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+                        <blockquote class="testimonial__text">"Best automotive service in the area. Highly recommend their expert team."</blockquote>
+                        <div class="testimonial__author">
+                            <strong>Amit Patel</strong>
+                            <span>Satisfied Customer</span>
                         </div>
                     </div>
-                    <p class="testimonial-text">
-                        "Quick diagnosis, transparent communication, and quality work. Highly recommend for anyone seeking professional auto care."
-                    </p>
-                    <div class="service-tag">Brake Service</div>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="customer-info">
-                            <div class="customer-avatar">S</div>
-                            <div class="customer-details">
-                                <h4 class="customer-name">Sarah Johnson</h4>
-                                <span class="customer-location">Happy Customer</span>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                            <span class="star">⭐</span>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">
-                        "Exceptional customer service and attention to detail. They fixed my transmission issue efficiently and at a fair price."
-                    </p>
-                    <div class="service-tag">Transmission Repair</div>
+                
+                <div class="testimonials__navigation">
+                    <button class="testimonial__nav-btn active" data-slide="0"></button>
+                    <button class="testimonial__nav-btn" data-slide="1"></button>
+                    <button class="testimonial__nav-btn" data-slide="2"></button>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn" id="prev-btn">‹</button>
-                <div class="carousel-dots" id="carousel-dots"></div>
-                <button class="carousel-btn next-btn" id="next-btn">›</button>
+    <!-- Booking Form Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking__container">
+                <div class="booking__content">
+                    <h2 class="section__title">Book Your Service Appointment</h2>
+                    <p class="section__subtitle">Schedule your vehicle service with our expert team</p>
+                    
+                    <div class="booking__info">
+                        <div class="info-item">
+                            <div class="info-item__icon">📞</div>
+                            <div class="info-item__content">
+                                <strong>Call Direct</strong>
+                                <p>+91 9998936790 | +91 7874252026</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-item__icon">⏰</div>
+                            <div class="info-item__content">
+                                <strong>Business Hours</strong>
+                                <p>Mon-Sat: 8:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking__form-container">
+                    <form class="booking-form" id="booking-form">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Service Type *</label>
+                            <select class="form-control" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="engine">Engine Repair & Maintenance</option>
+                                <option value="brake">Brake System Service</option>
+                                <option value="transmission">Transmission Repair</option>
+                                <option value="oil-change">Oil Change & Fluid Services</option>
+                                <option value="tire">Tire Services & Alignment</option>
+                                <option value="electrical">Electrical System Repair</option>
+                                <option value="ac">AC/Heating System</option>
+                                <option value="diagnostic">Diagnostic Services</option>
+                                <option value="emergency">Emergency Roadside Assistance</option>
+                                <option value="bodywork">Body Work & Painting</option>
+                                <option value="maintenance">Routine Maintenance</option>
+                                <option value="battery">Battery Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Preferred Time</label>
+                                <select class="form-control" name="time">
+                                    <option value="">Select Time</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Vehicle Make</label>
+                                <input type="text" class="form-control" name="make" placeholder="e.g. Toyota">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Vehicle Model</label>
+                                <input type="text" class="form-control" name="model" placeholder="e.g. Camry">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Year</label>
+                                <input type="number" class="form-control" name="year" min="1990" max="2025" placeholder="2020">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Issue Description</label>
+                            <textarea class="form-control" name="description" rows="4" placeholder="Please describe the issue or service needed..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width btn--lg">Book Appointment</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header animate-fade-up">
-                <span class="section-tagline">Get In Touch</span>
-                <h2 class="section-title">Book Your Service Today</h2>
-                <p class="section-description">
-                    Ready to give your vehicle the care it deserves? Contact us today to schedule your service appointment.
-                </p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-form-wrapper animate-slide-right">
-                    <form class="booking-form" id="booking-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">Name *</label>
-                                <input type="text" class="form-control" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Phone *</label>
-                                <input type="tel" class="form-control" name="phone" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Service Type *</label>
-                                <select class="form-control" name="service" required>
-                                    <option value="">Select Service</option>
-                                    <option value="engine">Engine Repair & Maintenance</option>
-                                    <option value="brake">Brake System Service</option>
-                                    <option value="transmission">Transmission Service</option>
-                                    <option value="oil">Oil Change & Fluids</option>
-                                    <option value="tire">Tire Services</option>
-                                    <option value="electrical">Electrical System</option>
-                                    <option value="climate">Climate Control</option>
-                                    <option value="diagnostics">Computer Diagnostics</option>
-                                    <option value="emergency">Emergency Service</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Vehicle Details</label>
-                            <input type="text" class="form-control" name="vehicle" placeholder="Make, Model, Year (e.g., Honda Civic 2018)">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" name="message" rows="4" placeholder="Describe your vehicle's issue or service needs..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn--primary btn--full-width">
-                            <span class="btn-text">Book Service</span>
-                            <span class="btn-loading">Sending...</span>
-                        </button>
-                    </form>
-                </div>
-
-                <div class="contact-info animate-slide-left">
-                    <div class="contact-card">
-                        <h3>Contact Information</h3>
-                        
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__subtitle">Contact us for immediate assistance or service inquiries</p>
+                    
+                    <div class="contact__details">
                         <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div class="contact-details">
+                            <div class="contact-item__icon">📞</div>
+                            <div class="contact-item__content">
                                 <h4>Phone Numbers</h4>
-                                <a href="tel:+919998936790" class="contact-link">+91 9998936790</a>
-                                <a href="tel:+917874252026" class="contact-link">+91 7874252026</a>
+                                <p><a href="tel:+919998936790">+91 9998936790</a></p>
+                                <p><a href="tel:+917874252026">+91 7874252026</a></p>
                             </div>
                         </div>
-
+                        
                         <div class="contact-item">
-                            <div class="contact-icon">✉️</div>
-                            <div class="contact-details">
-                                <h4>Email</h4>
-                                <a href="mailto:info@kkservicepoint.com" class="contact-link">info@kkservicepoint.com</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
+                            <div class="contact-item__icon">📍</div>
+                            <div class="contact-item__content">
                                 <h4>Location</h4>
-                                <p>Professional Automotive Service Center</p>
-                                <a href="https://maps.app.goo.gl/HEbFcgNMNUkPRe8L6" target="_blank" class="contact-link">Get Directions</a>
+                                <p>Visit our service center for professional automotive care</p>
+                                <a href="https://maps.app.goo.gl/HEbFcgNMNUkPRe8L6" target="_blank" class="contact__map-link">View on Google Maps</a>
                             </div>
                         </div>
-
-                        <div class="business-hours">
-                            <h4>Business Hours</h4>
-                            <div class="hours-grid">
-                                <div class="hours-item">
-                                    <span class="day">Mon - Fri</span>
-                                    <span class="time">8:00 AM - 7:00 PM</span>
-                                </div>
-                                <div class="hours-item">
-                                    <span class="day">Saturday</span>
-                                    <span class="time">8:00 AM - 6:00 PM</span>
-                                </div>
-                                <div class="hours-item">
-                                    <span class="day">Sunday</span>
-                                    <span class="time">9:00 AM - 5:00 PM</span>
-                                </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">⏰</div>
+                            <div class="contact-item__content">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
+                                <p>Sunday: Closed</p>
                             </div>
                         </div>
-
-                        <div class="emergency-contact">
-                            <h4>Emergency Service</h4>
-                            <p>24/7 Emergency Roadside Assistance</p>
-                            <a href="tel:+919998936790" class="btn btn--secondary">Call Emergency</a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item__icon">🚨</div>
+                            <div class="contact-item__content">
+                                <h4>Emergency Service</h4>
+                                <p>24/7 roadside assistance available</p>
+                                <p>Call for immediate help</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="contact__image">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1753204869/pplx_project_search_images/73aaf524390817c0e3c5f1d4d8323a239344285e.jpg" alt="3D Car Service Tools" class="contact__img">
                 </div>
             </div>
         </div>
@@ -495,63 +410,35 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <span class="logo-icon">🔧</span>
-                        <span class="logo-text">K.K. Service Point</span>
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <h3 class="footer__title">K.K. Service Point</h3>
+                        <p class="footer__description">Your trusted partner for comprehensive automotive repair and maintenance services.</p>
                     </div>
-                    <p class="footer-description">
-                        Your trusted automotive partner for over 15 years. Professional service, honest pricing, and exceptional care for your vehicle.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-link" aria-label="Google Reviews">⭐</a>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__subtitle">Our Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#services">Engine Repair</a></li>
+                            <li><a href="#services">Brake Service</a></li>
+                            <li><a href="#services">Transmission</a></li>
+                            <li><a href="#services">Diagnostics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__section">
+                        <h4 class="footer__subtitle">Contact Info</h4>
+                        <ul class="footer__contact">
+                            <li>📞 +91 9998936790</li>
+                            <li>📞 +91 7874252026</li>
+                            <li>⏰ Mon-Sat: 8AM-7PM</li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services">Engine Repair</a></li>
-                        <li><a href="#services">Brake Service</a></li>
-                        <li><a href="#services">Oil Change</a></li>
-                        <li><a href="#services">Diagnostics</a></li>
-                        <li><a href="#services">Emergency Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Contact Info</h4>
-                    <ul class="footer-contact">
-                        <li>📞 <a href="tel:+919998936790">+91 9998936790</a></li>
-                        <li>📞 <a href="tel:+917874252026">+91 7874252026</a></li>
-                        <li>✉️ <a href="mailto:info@kkservicepoint.com">info@kkservicepoint.com</a></li>
-                        <li>📍 Professional Automotive Service Center</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-copyright">
+                
+                <div class="footer__bottom">
                     <p>&copy; 2025 K.K. Service Point. All rights reserved.</p>
-                </div>
-                <div class="footer-certifications">
-                    <span class="cert-mini">ASE Certified</span>
-                    <span class="cert-mini">BBB A+</span>
-                    <span class="cert-mini">EPA Certified</span>
                 </div>
             </div>
         </div>
