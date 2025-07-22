@@ -209,7 +209,7 @@ async function handleFormSubmission(e) {
   const formData = new FormData(bookingForm);
 
   try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbxw0M-q0QJ6FHHbWsng1k-Bem0_M5oQPsCeky4lV38NDcxpl_dKBMCGukpDu35ReJJH/exec", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbxevzWQw1hh9xyvp6PBjFzTQGZOLE6XkbKzwxTJjUToprHKKG-2GiEooa1W7GFM3tKs/exec", {
       method: "POST",
       body: new URLSearchParams(formData), // ✅ Send as form-encoded
     });
