@@ -215,16 +215,10 @@ async function handleFormSubmission(e) {
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
     });
-
-    const text = await res.text();
-    if (text.includes("Success")) {
-      alert("✅ Submitted successfully!");
-      bookingForm.reset();
-    } else {
-      alert("❌ " + text);
-    }
+    alert("✅ Submitted successfully!");
+    bookingForm.reset();
   } catch (err) {
-    alert(JSON.stringify(err)+" ❌ Network error!");
+    alert(err.message+" ❌ Network error!");
   }
 }
 
